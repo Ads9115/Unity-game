@@ -5,6 +5,20 @@
 # Ignore Unity-generated or non-code assets so that GitHub
 # correctly identifies the project as C# instead of HTML or JSON
 
+# Force GitHub to detect C# properly
+*.cs linguist-language=C#
+*.shader linguist-language=HLSL
+*.cginc linguist-language=HLSL
+*.compute linguist-language=HLSL
+*.hlsl linguist-language=HLSL
+
+# Ignore build and library files from analysis
+[Ll]ibrary/* linguist-vendored
+[Tt]emp/* linguist-vendored
+[Bb]uild/* linguist-vendored
+obj/* linguist-vendored
+
+
 # Common Unity-generated metadata
 *.meta linguist-generated=true
 *.unity linguist-generated=true
