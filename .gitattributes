@@ -1,13 +1,51 @@
-# Tell GitHub Linguist to treat everything except C# scripts as vendored or generated
+# -------------------------------
+# Unity Project GitHub Linguist Fix
+# -------------------------------
+
+# Ignore Unity-generated or non-code assets so that GitHub
+# correctly identifies the project as C# instead of HTML or JSON
+
+# Common Unity-generated metadata
 *.meta linguist-generated=true
 *.unity linguist-generated=true
 *.prefab linguist-generated=true
 *.mat linguist-generated=true
 *.anim linguist-generated=true
 *.asset linguist-generated=true
-*.json linguist-generated=true
-*.xml linguist-generated=true
+*.controller linguist-generated=true
+*.overrideController linguist-generated=true
+*.physicsMaterial2D linguist-generated=true
+*.physicMaterial linguist-generated=true
+
+# Art and model assets
 *.png linguist-generated=true
 *.jpg linguist-generated=true
+*.jpeg linguist-generated=true
+*.tga linguist-generated=true
+*.psd linguist-generated=true
+*.tif linguist-generated=true
+*.tiff linguist-generated=true
 *.fbx linguist-generated=true
+*.obj linguist-generated=true
+
+# Fonts, shaders, and audio
 *.ttf linguist-generated=true
+*.otf linguist-generated=true
+*.shader linguist-generated=true
+*.mp3 linguist-generated=true
+*.wav linguist-generated=true
+*.ogg linguist-generated=true
+
+# Misc data/config files
+*.json linguist-generated=true
+*.xml linguist-generated=true
+*.ini linguist-generated=true
+*.csv linguist-generated=true
+*.bytes linguist-generated=true
+
+# Ignore Unity build outputs and logs
+[Bb]uild*/ linguist-generated=true
+[Ll]ogs*/ linguist-generated=true
+
+# Optional: explicitly mark C# files as the main language
+*.cs linguist-language=C#
