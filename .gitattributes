@@ -1,0 +1,13 @@
+# Tell GitHub Linguist to treat everything except C# scripts as vendored or generated
+*.meta linguist-generated=true
+*.unity linguist-generated=true
+*.prefab linguist-generated=true
+*.mat linguist-generated=true
+*.anim linguist-generated=true
+*.asset linguist-generated=true
+*.json linguist-generated=true
+*.xml linguist-generated=true
+*.png linguist-generated=true
+*.jpg linguist-generated=true
+*.fbx linguist-generated=true
+*.ttf linguist-generated=true
